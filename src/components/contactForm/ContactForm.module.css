@@ -33,5 +33,6 @@
 }
 
 .formBtn:hover {
-	background-color: rgba(0, 204, 204, 0.6);
+	background-color: rgba(0, 200, 120, 0.6);
+	border-color: rgba(0, 204, 204, 0.3);
 }
