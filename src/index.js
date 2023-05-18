@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Provaider } from 'react-redux';
+import { Provider } from "react-redux";
+import { store, persistor } from 'redax/srore';
 import App from 'components/App';
-import { store } from 'redax/srore';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provaider store={store}>
-      <App />
-    </Provaider>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+          <App />
+      </PersistGate>
+    </Provider>
   </React.StrictMode>
 );
