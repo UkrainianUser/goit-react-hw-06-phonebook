@@ -17,7 +17,7 @@ export default function App () {
   const formSubmitHandler = (data) => {
     const { name, number } = data;
     if (isNameExist(name)) {
-    alert(`Name ${name} is already in contacts.`);
+    alert(`${name} is already in contacts.`);
     return;
     }
     if (isNumberExist(number)) {
